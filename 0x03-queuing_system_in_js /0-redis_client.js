@@ -1,9 +1,9 @@
 // import redis from 'redis';
 import Redis from 'ioredis';
 
-const client = redis.createClient();
+//const client = redis.createClient();
 
-//const redisClient = new Redis();
+const redisClient = new Redis();
 
 redisClient.on('connect', () => {
   console.log('Redis client connected to the server');
